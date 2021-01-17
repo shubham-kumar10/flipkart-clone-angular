@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2874f0;
+}
+
+header > img {
+  height: auto;
+  max-width: 10rem;
+  width: 100%;
+}
+
+header > button {
+  border: none;
+  padding: 0.7rem 3rem;
+  background-color: transparent;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.header--login {
+  background-color: white !important;
+  color: #2874f0;
+  font-weight: 400;
+}
