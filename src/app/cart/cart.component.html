@@ -2,7 +2,7 @@
     My Cart ({{cart.length}})
 </header>
 <section *ngFor="let item of cart">
-    {{item|json}}
+    <app-cart-item [item]="item" (quantityUpdated)="updateTotal()"></app-cart-item>
 </section>
 <aside>
     <header>
