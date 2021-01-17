@@ -1,0 +1,17 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.card > img {
+  max-width: 15rem;
+  max-height: 20rem;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card--text {
+  padding: 0.2rem 1rem;
+}
