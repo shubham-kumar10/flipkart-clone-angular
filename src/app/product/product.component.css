@@ -1,0 +1,14 @@
+.details--left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.details--left-footer {
+  display: flex;
+  align-items: center;
+}
+
+footer > button {
+  margin: 2rem 3rem;
+}

@@ -15,6 +15,7 @@ export class ProductListComponent implements OnInit {
   ngOnInit(): void {
     this.productService.getProducts().subscribe((data: Product[]) => {
       this.productList = data;
+      this.productService.productList = data;
     },
       (error) => {
         throw new Error('Data not found');

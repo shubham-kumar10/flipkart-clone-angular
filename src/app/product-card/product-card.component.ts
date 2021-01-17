@@ -19,6 +19,6 @@ export class ProductCardComponent implements OnInit {
   }
 
   productCardClicked(): void {
-    this.router.navigate(['product']);
+    this.router.navigate(['product'], { queryParams: { id: this.productDetails.id } });
   }
 }
