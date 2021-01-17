@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CartItem } from '../shared/model/cartItem.model';
 import { Product } from '../shared/model/product.model';
 import { CartService } from '../shared/services/cart.service';
@@ -13,6 +13,7 @@ import { ProductService } from '../shared/services/product.service';
 export class ProductComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private productService: ProductService,
     private cartService: CartService
   ) {}
@@ -32,5 +33,6 @@ export class ProductComponent implements OnInit {
       isSaved: false,
     };
     this.cartService.addToCart(item);
+    this.router.navigate(['cart']);
   }
 }

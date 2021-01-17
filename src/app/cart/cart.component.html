@@ -1,0 +1,35 @@
+<header>
+    My Cart ({{cart.length}})
+</header>
+<section *ngFor="let item of cart">
+    {{item|json}}
+</section>
+<aside>
+    <header>
+        <h2>Price Details</h2>
+    </header>
+    <table>
+        <tr>
+            <td>Price({{cart.length}} items)</td>
+            <td>{{total}}</td>
+        </tr>
+        <tr>
+            <td>Discount</td>
+            <td>totalDiscount</td>
+        </tr>
+        <tr>
+            <td>Delivery Carges</td>
+            <td>totalDiscount</td>
+        </tr>
+        <tr class="cart--aside-total">
+            <td>Total Amount</td>
+            <td>10000</td>
+        </tr>
+    </table>
+    <footer>
+        <p>You will save ₹1,768 on this order</p>
+    </footer>
+</aside>
+<footer>
+    <button class="cart--footer-button">Place Order</button>
+</footer>
