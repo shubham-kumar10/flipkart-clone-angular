@@ -1,35 +1,40 @@
-<header>
-    My Cart ({{cart.length}})
-</header>
-<section *ngFor="let item of cart">
-    <app-cart-item [item]="item" (quantityUpdated)="updateTotal()"></app-cart-item>
-</section>
-<aside>
-    <header>
-        <h2>Price Details</h2>
-    </header>
-    <table>
-        <tr>
-            <td>Price({{cart.length}} items)</td>
-            <td>{{total}}</td>
-        </tr>
-        <tr>
-            <td>Discount</td>
-            <td>totalDiscount</td>
-        </tr>
-        <tr>
-            <td>Delivery Carges</td>
-            <td>totalDiscount</td>
-        </tr>
-        <tr class="cart--aside-total">
-            <td>Total Amount</td>
-            <td>10000</td>
-        </tr>
-    </table>
-    <footer>
-        <p>You will save ₹1,768 on this order</p>
-    </footer>
-</aside>
-<footer>
-    <button class="cart--footer-button">Place Order</button>
-</footer>
+<main>
+    <section>
+        <header>
+            My Cart ({{cart.length}})
+        </header>
+        <article *ngFor="let item of cart">
+            <app-cart-item [item]="item" (quantityUpdated)="updateTotal()"></app-cart-item>
+        </article>
+
+        <footer>
+            <button class="cart--footer-button">Place Order</button>
+        </footer>
+    </section>
+    <aside>
+        <header>
+            Price Details
+        </header>
+        <table>
+            <tr>
+                <td class="table-text">Price({{cart.length}} items)</td>
+                <td class="table-text">{{total}}</td>
+            </tr>
+            <tr>
+                <td class="table-text">Discount</td>
+                <td class="table-text">totalDiscount</td>
+            </tr>
+            <tr>
+                <td class="table-text">Delivery Carges</td>
+                <td class="table-text">totalDiscount</td>
+            </tr>
+            <tr>
+                <td class="table-text-total">Total Amount</td>
+                <td class="table-text-total">10000</td>
+            </tr>
+        </table>
+        <footer>
+            <p class="text-discount">You will save ₹1,768 on this order</p>
+        </footer>
+    </aside>
+</main>

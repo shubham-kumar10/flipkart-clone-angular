@@ -2,3 +2,48 @@
   font-size: 2rem;
   border: 1px dashed gray;
 }
+main {
+  display: flex;
+  margin: 2rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+main > aside {
+  flex: 0.5;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.5rem;
+}
+
+main > section > article {
+  border: 0.2rem solid whitesmoke;
+  margin: 1rem 0;
+}
+
+header {
+  font-size: 2.5rem;
+}
+
+table {
+  margin: 1rem 0;
+  width: 100%;
+}
+table > tr {
+  margin: 1px 0;
+}
+
+.table-text {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.table-text-total {
+  font-size: 2rem;
+}
+.text-discount {
+  font-size: 1.5rem;
+}

@@ -34,13 +34,3 @@ p {
   font-size: 3rem;
   font-weight: 400;
 }
-
-.text-striked {
-  text-decoration: line-through;
-  font-size: 2.5rem;
-  color: grey;
-}
-
-.text-discount {
-  color: green;
-}

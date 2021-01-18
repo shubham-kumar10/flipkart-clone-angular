@@ -1,8 +1,25 @@
-.cartItem {
-  display: flex;
-  flex-direction: column;
+main {
+  display: inline-flex;
 }
 
+figure {
+  flex: 0.4;
+}
+
+figure > img {
+  width: 65%;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: gray;
+}
 .cartItem--image {
   height: auto;
   width: 100%;
@@ -11,4 +28,25 @@
 
 .cartItem--image-header {
   font-size: medium;
+}
+
+footer {
+  display: flex;
+}
+
+footer > section {
+  display: flex;
+}
+
+footer > section > p {
+  font-size: 1.6rem;
+  margin: 0.5rem;
+}
+
+footer > button {
+  margin: 0.5rem;
+}
+
+.text-discount {
+  font-size: 1.5rem;
 }

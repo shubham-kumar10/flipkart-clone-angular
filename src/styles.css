@@ -25,3 +25,22 @@
 .button--square-orangered {
   background-color: orangered;
 }
+
+.button--rounded {
+  width: 2.8rem;
+  height: 2.8rem;
+  border: 1px solid #c2c2c2;
+  cursor: pointer;
+  font-size: 1.6rem;
+  border-radius: 50%;
+}
+
+.text-striked {
+  text-decoration: line-through;
+  font-size: 2.5rem;
+  color: grey;
+}
+
+.text-discount {
+  color: green;
+}
