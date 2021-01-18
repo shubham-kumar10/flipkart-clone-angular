@@ -1,19 +1,23 @@
-<section class="cartItem">
-    <img src={{item.product.imgUrl}} alt={{item.product.name}}>
-</section>
-<section>
-    <h2>{{item.product.name}}</h2>
-    <h2>Seller: {{item.product.seller}}</h2>
-    <span>
-        <p>₹ {{finalPrice}}</p>
-        <p>₹ {{item.product.price}}</p>
-        <p>{{item.product.discountPercent}} % Off</p>
-    </span>
-</section>
-<section>
-    <button (click)="incQty()">+</button>
-    <p>{{item.quantity}}</p>
-    <button (click)="decQty()">-</button>
-    <button (click)="moveToSave()">Save for later</button>
-    <button (click)="remove()">Remove</button>
-</section>
+<main class="cartItem">
+    <figure class="cartItem--image">
+        <img src={{item.product.imgUrl}} alt={{item.product.name}}>
+        <figcaption class="cartItem--image-header">
+            {{item.product.name}}
+        </figcaption>
+    </figure>
+    <section>
+        <h2>Seller: {{item.product.seller}}</h2>
+        <span>
+            <p>₹ {{finalPrice}}</p>
+            <p>₹ {{item.product.price}}</p>
+            <p>{{item.product.discountPercent}} % Off</p>
+        </span>
+    </section>
+    <section>
+        <button (click)="incQty()">+</button>
+        <p>{{item.quantity}}</p>
+        <button (click)="decQty()">-</button>
+        <button (click)="moveToSave()">Save for later</button>
+        <button (click)="remove()">Remove</button>
+    </section>
+</main>

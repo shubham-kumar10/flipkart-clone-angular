@@ -42,5 +42,27 @@
     "seller": "Asian Shop",
     "deliveryTime": 4,
     "deliveryCost": 40
+  },
+  {
+    "id": 3,
+    "name": "Jeans",
+    "price": 1050,
+    "imgUrl": "https://www.levi.in/on/demandware.static/-/Sites-LeviMaster-Catalog/en_IN/dwae8f4caf/images/hi-res/162720003/162720003_01_Front.jpg",
+    "hasDiscount": true,
+    "discountPercent": 10,
+    "seller": "Asian Shop",
+    "deliveryTime": 4,
+    "deliveryCost": 40
+  },
+  {
+    "id": 3,
+    "name": "Jeans",
+    "price": 1050,
+    "imgUrl": "https://www.levi.in/on/demandware.static/-/Sites-LeviMaster-Catalog/en_IN/dwae8f4caf/images/hi-res/162720003/162720003_01_Front.jpg",
+    "hasDiscount": true,
+    "discountPercent": 10,
+    "seller": "Asian Shop",
+    "deliveryTime": 4,
+    "deliveryCost": 40
   }
 ]

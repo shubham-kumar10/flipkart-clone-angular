@@ -1,9 +1,9 @@
 <div class="card" (click)="productCardClicked()">
     <img src={{productDetails.imgUrl}} alt={{productDetails.name}}>
-    <div class="card--text">
-        <h4>{{productDetails.name}}</h4>
+    <article class="card--text">
+        <h4 class="card--text-heading">{{productDetails.name}}</h4>
         <p>{{finalPrice}}</p>
         <p class="card--text-striked">{{productDetails.price}}</p>
         <p class="card--text-discount">{{productDetails.discountPercent}} %</p>
-    </div>
+    </article>
 </div>

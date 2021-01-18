@@ -35,4 +35,8 @@ export class CartItemComponent implements OnInit {
     }
     this.quantityUpdated.emit(true);
   }
+
+  moveToSave(): void {}
+
+  remove(): void {}
 }

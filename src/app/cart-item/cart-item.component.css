@@ -3,8 +3,12 @@
   flex-direction: column;
 }
 
-.cartItem > img {
+.cartItem--image {
   height: auto;
   width: 100%;
   max-width: 8rem;
+}
+
+.cartItem--image-header {
+  font-size: medium;
 }

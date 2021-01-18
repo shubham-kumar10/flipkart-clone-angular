@@ -28,6 +28,7 @@ export class ProductComponent implements OnInit {
 
   addToCart(): void {
     const item: CartItem = {
+      id: undefined,
       product: this.productDetails,
       quantity: 1,
       isSaved: false,
