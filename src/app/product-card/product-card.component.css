@@ -6,13 +6,43 @@
   margin: 1rem;
 }
 .card > img {
-  max-width: 15rem;
-  max-height: 20rem;
+  max-width: 25rem;
+  max-height: 30rem;
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+section {
+  margin: 1rem;
+}
 .card--text {
-  padding: 0.2rem 1rem;
+  display: flex;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+section > h4 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.card--text-price {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.card--text-striked {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  color: gray;
+  text-decoration: line-through;
+}
+
+.card--text-discount {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  color: green;
 }
