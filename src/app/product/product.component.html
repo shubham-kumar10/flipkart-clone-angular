@@ -1,7 +1,16 @@
-<section class="details--left">
-    <img src={{productDetails.imgUrl}} alt={{productDetails.name}}>
-    <footer class="details--left-footer">
-        <button (click)="addToCart()">Add to Cart</button>
-        <button>Buy Now</button>
-    </footer>
+<section>
+    <article>
+        <img src={{productDetails.imgUrl}} alt={{productDetails.name}}>
+        <footer>
+            <button class="button--square button--square-orange" (click)="addToCart()">Add to Cart</button>
+            <button class="button--square button--square-orangered">Buy Now</button>
+        </footer>
+    </article>
+    <aside>
+        <h1>{{productDetails.name}}</h1>
+        <p>&#8377; {{finalPrice}}</p>
+        <p *ngIf="productDetails.discountPercent>0" class="text-striked">&#8377; {{productDetails.price}}</p>
+        <p *ngIf="productDetails.discountPercent>0" class="text-discount">{{productDetails.discountPercent}} %
+            Off</p>
+    </aside>
 </section>

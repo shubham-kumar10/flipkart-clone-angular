@@ -7,3 +7,21 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.button--square {
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: 300;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.button--square-orange {
+  background-color: orange;
+}
+
+.button--square-orangered {
+  background-color: orangered;
+}

@@ -1,14 +1,46 @@
-.details--left {
+section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 50%;
+  margin: 5rem;
+}
+article > img {
+  width: 60%;
+  border: 0.2rem solid whitesmoke;
+}
+/* article {
+  flex: 0.5;
+}
+aside {
+  flex: 0.5;
+} */
+
+h1 {
+  font-size: 5rem;
+  font-weight: 200;
 }
 
-.details--left-footer {
+footer {
   display: flex;
   align-items: center;
+  padding: 0.5rem 5rem;
 }
 
 footer > button {
-  margin: 2rem 3rem;
+  margin: 0.8rem 1rem;
+}
+
+p {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.text-striked {
+  text-decoration: line-through;
+  font-size: 2.5rem;
+  color: grey;
+}
+
+.text-discount {
+  color: green;
 }

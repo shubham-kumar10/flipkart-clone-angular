@@ -20,10 +20,13 @@ export class ProductComponent implements OnInit {
 
   id: number;
   productDetails: Product;
-
+  finalPrice: number;
   ngOnInit(): void {
     this.id = +this.route.snapshot.queryParamMap.get('id');
     this.productDetails = this.productService.getProductById(this.id);
+    this.finalPrice =
+      this.productDetails.price -
+      0.01 * this.productDetails.discountPercent * this.productDetails.price;
   }
 
   addToCart(): void {
