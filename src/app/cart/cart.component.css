@@ -11,13 +11,11 @@ section {
   display: flex;
   flex-direction: column;
 }
-main > aside {
-  flex: 0.5;
-}
 aside {
   display: flex;
   flex-direction: column;
   margin: 0 1.5rem;
+  width: 50%;
 }
 
 main > section > article {
